@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веб-калькулятор палива (Варіант 5)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Веб-калькулятор палива</h1>
+
+        <!-- Завдання 1 -->
+        <section>
+            <h2>Завдання 1: Склад і теплота згоряння палива</h2>
+            <form id="task1Form">
+                <label>H<sup>P</sup> (%): <input type="number" step="0.01" value="2.8" id="hp1"></label>
+                <label>C<sup>P</sup> (%): <input type="number" step="0.01" value="72.3" id="cp1"></label>
+                <label>S<sup>P</sup> (%): <input type="number" step="0.01" value="2.00" id="sp1"></label>
+                <label>N<sup>P</sup> (%): <input type="number" step="0.01" value="1.10" id="np1"></label>
+                <label>O<sup>P</sup> (%): <input type="number" step="0.01" value="1.30" id="op1"></label>
+                <label>W<sup>P</sup> (%): <input type="number" step="0.01" value="5.5" id="wp1"></label>
+                <label>A<sup>P</sup> (%): <input type="number" step="0.01" value="15.0" id="ap1"></label>
+                <button type="button" onclick="calculateTask1()">Обчислити</button>
+            </form>
+            <div id="task1Result"></div>
+        </section>
+
+        <!-- Завдання 2 -->
+        <section>
+            <h2>Завдання 2: Перерахунок складу мазуту</h2>
+            <form id="task2Form">
+                <label>C<sup>T</sup> (%): <input type="number" step="0.01" value="85.50" id="ct2"></label>
+                <label>H<sup>T</sup> (%): <input type="number" step="0.01" value="11.20" id="ht2"></label>
+                <label>O<sup>T</sup> (%): <input type="number" step="0.01" value="0.80" id="ot2"></label>
+                <label>S<sup>T</sup> (%): <input type="number" step="0.01" value="2.50" id="st2"></label>
+                <label>Q<sup>daf</sup> (МДж/кг): <input type="number" step="0.01" value="40.40" id="qdaf2"></label>
+                <label>W<sup>P</sup> (%): <input type="number" step="0.01" value="2.00" id="wp2"></label>
+                <label>A<sup>d</sup> (%): <input type="number" step="0.01" value="0.15" id="ad2"></label>
+                <label>V<sup>d</sup> (мг/кг): <input type="number" step="0.01" value="333.3" id="vd2"></label>
+                <button type="button" onclick="calculateTask2()">Обчислити</button>
+            </form>
+            <div id="task2Result"></div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
